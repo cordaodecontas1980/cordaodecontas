@@ -546,13 +546,13 @@ select.cad-inp{cursor:pointer;} select.cad-inp option{background:#15140f;}
 /* ===== TELA DE LOGIN ===== */
 .login-overlay{position:fixed; inset:0; z-index:2000; background:#070707; overflow-y:auto; display:block;}
 /* logo gigante como marca d'agua cobrindo o topo */
-.login-bg-logo{position:absolute; top:-7%; left:50%; transform:translateX(-50%); width:155%; max-width:760px; opacity:0.14; mix-blend-mode:screen; filter:blur(1.5px); pointer-events:none; z-index:1;}
+.login-bg-logo{position:absolute; top:-7%; left:50%; transform:translateX(-50%); width:155%; max-width:760px; opacity:0.07; filter:blur(1px); pointer-events:none; z-index:1;}
 /* brilho dourado no topo + escurecimento embaixo */
 .login-glow{position:absolute; inset:0; pointer-events:none; z-index:1;
   background:radial-gradient(circle at 50% 19%, rgba(212,160,23,0.22), transparent 52%),
             linear-gradient(180deg, rgba(7,7,7,0) 30%, #070707 74%);}
 .login-box{position:relative; z-index:2; max-width:382px; margin:0 auto; padding:46px 26px 44px; text-align:center; min-height:100%; display:flex; flex-direction:column; justify-content:center;}
-.login-logo{width:205px; height:auto; margin:0 auto 4px; display:block; mix-blend-mode:screen; filter:drop-shadow(0 0 26px rgba(212,160,23,0.4)); animation:loginUp .7s ease;}
+.login-logo{width:230px; height:auto; margin:0 auto 4px; display:block; filter:drop-shadow(0 6px 26px rgba(212,160,23,0.28)); animation:loginUp .7s ease;}
 .login-titulo{font-family:'Cinzel Decorative','Cinzel',serif; font-weight:800; color:var(--ouro-claro); font-size:1.7rem; letter-spacing:3px; line-height:1.05; text-shadow:0 2px 20px rgba(212,160,23,0.45);}
 .login-ornament{color:var(--ouro); font-size:0.6rem; letter-spacing:4px; font-weight:800; margin:9px 0 3px;}
 .login-sub{color:var(--texto-leve); font-size:0.72rem; letter-spacing:1.2px; margin-bottom:22px;}
@@ -2090,10 +2090,10 @@ function abrirMeuPerfil(){ var tem=false; try{var s=JSON.parse(localStorage.getI
 
 <!-- ===================== TELA DE LOGIN ===================== -->
 <div id="ov-login" class="login-overlay">
-  <img class="login-bg-logo" src="logo.jpg" alt="" aria-hidden="true">
+  <img class="login-bg-logo" src="logo.png" alt="" aria-hidden="true">
   <div class="login-glow"></div>
   <div class="login-box">
-    <img class="login-logo" src="logo.jpg" alt="Cordão de Contas">
+    <img class="login-logo" src="logo.png" alt="Cordão de Contas">
     <div class="login-titulo">CORDÃO DE CONTAS</div>
     <div class="login-ornament">✦ ASSOCIAÇÃO DE CAPOEIRA ✦</div>
     <div class="login-sub">Gran Mestre Décio · Itaguaí–RJ · 1980</div>
